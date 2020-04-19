@@ -184,6 +184,49 @@ nav .collapse ul li a:hover {
 .authorsSection .bottom .bottom-cards .card-body-container:hover p {
     color: #fff;
 }
+<<<<<<< HEAD
+/* end boxes*/
+
+/* start about section */
+
+#about {
+  background-color: #f8f9fa;
+}
+#about .heading h2 {
+  font-weight: 500;
+  line-height: 1.2;
+  font-size: 2.5rem;
+  padding-bottom: 1.25rem
+}
+#about .heading p {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 2.25rem;
+}
+#about #according {
+  margin-top: 2.25rem;
+}
+#about .card {
+  border: 1px solid rgba(0, 0, 0, 0.125);
+  border-radius: 0.25rem;
+}
+#about .card .card-header {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.125);
+  padding: .30rem 0;
+  margin-bottom: 0;
+}
+#about .card .card-header h2 .btn-link {
+  text-decoration: none;
+  font-size: 1.25rem;
+  font-weight: 500;
+  color: #212529;
+}
+#about .card .card-header h2 .btn-link:hover {
+  color: #212529;
+}
+
+/* end about section */
+=======
 
 
 /* end authors section  */
+>>>>>>> 27d66061e135b87922ca2c1f19a2a4b145909e57
