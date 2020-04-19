@@ -28,6 +28,8 @@ nav
   position: fixed !important;
   z-index: 100;
   width:100%;
+  box-shadow:0px 2px 5px #3292a6;
+
 
 }
 nav img 
@@ -46,7 +48,7 @@ nav img
 nav .collapse ul li
 {
   margin-left:15px;
-  color: red !important;
+
   font-size:25px;
  
 }
