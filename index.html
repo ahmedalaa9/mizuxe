@@ -14,12 +14,12 @@
 
 </head>
 
-<body id="home">
+<body id="home" data-spy="scroll" data-target="#main-nav" >
 
     <!-- navbar -->
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light" id="main-nav">
 
         <div class="container">
 
@@ -40,20 +40,20 @@
                 <ul class="navbar-nav ml-auto">
 
                     <li class="nav-item ">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        <a class="nav-link" href="#home">Home <span class="sr-only">(current)</span></a>
                     </li>
 
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">about</a>
+                        <a class="nav-link" href="#about">about</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">meet the authors</a>
+                        <a class="nav-link" href="#authors">meet the authors</a>
                     </li>
 
                     <li class="nav-item">
-                        <a class="nav-link" href="#">contact</a>
+                        <a class="nav-link" href="#contact">contact</a>
                     </li>
 
 
@@ -66,12 +66,6 @@
         </div>
 
     </nav>
-
-
-
-
-
-
 
 
 
@@ -161,15 +155,6 @@
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
     <!--end boxes-->
 
     <!-- start about section -->
@@ -248,7 +233,7 @@
 
     <!-- start authors section-->
 
-    <section class="authorsSection my-5">
+    <section class="authorsSection my-5" id="authors">
         <div class="container">
             <div class="top">
                 <h2 class="text-center py-2">Meet The Authors</h2>
@@ -408,7 +393,30 @@
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
 
+    <script>
+        $('#year').text(new Date().getFullYear());
 
+         //init scrolling
+         $('body').scrollspy({ terget: '#main-nav'});
+
+         //smooth scrolling
+         $("#main-nav a").on('click', function(event){
+             if(this.hash !== "") {
+                 event.preventDefault();
+
+                 const hash = this.hash;
+
+                 $('html, body').animate({
+                     scrollTop: $(hash).offset().top
+                 }, 800, function () {
+
+                     window.location.hash = hash;
+                 
+                 });
+             }
+         });
+         
+     </script>
 
 
 
