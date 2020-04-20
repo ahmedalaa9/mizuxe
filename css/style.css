@@ -33,6 +33,7 @@ nav {
     position: fixed !important;
     z-index: 100;
     width: 100%;
+    box-shadow: 0 2px 4px #3292a6;
 }
 
 nav img {
